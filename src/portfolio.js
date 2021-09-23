@@ -195,6 +195,26 @@ const achievementSection = {
 
   achievementsCards: [
     {
+      title: "Google IT Support Professional",
+      subtitle:
+        "Certificate of completion of Google IT Support Professional from Google.",
+      image: require("./assets/images/google-it-support-certificate.png"),
+      footerLink: [
+        {
+          name: "Certification",
+          url: "https://drive.google.com/file/d/1_bTwWlmBehDHbFBC2qzoPsHJPC-d2IB4/view?usp=sharing"
+        },
+        // {
+        //   name: "Award Letter",
+        //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
+        // },
+        // {
+        //   name: "Google Code-in Blog",
+        //   url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+        // }
+      ]
+    },
+    {
       title: "System Administration and IT Infrastructure Services",
       subtitle:
         "Certificate of completion of System Administration and IT Infrastructure Services from Google.",
@@ -203,6 +223,27 @@ const achievementSection = {
         {
           name: "Certification",
           url: "https://drive.google.com/file/d/1eseNHdhbfdmB5ekALTp0gMWTFJruXBbd/view?usp=sharing"
+        },
+        // {
+        //   name: "Award Letter",
+        //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
+        // },
+        // {
+        //   name: "Google Code-in Blog",
+        //   url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+        // }
+      ]
+    },
+
+    {
+      title: "IT Security: Defense against the digital dark arts",
+      subtitle:
+        "Certificate of completion of IT Security: Defense against the digital dark arts from Google.",
+      image: require("./assets/images/google.png"),
+      footerLink: [
+        {
+          name: "Certification",
+          url: "https://drive.google.com/file/d/1dafxF9p7FRjr-CTsEm4sUwCINQpbxY8P/view?usp=sharing"
         },
         // {
         //   name: "Award Letter",
