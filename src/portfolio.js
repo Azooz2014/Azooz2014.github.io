@@ -17,7 +17,7 @@ const greeting = {
     "A passionate System Administrator & IT Support Specialist 💻"
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1Qev8yNhmf9RbCA6hikIpDzEqzXSGUhMU/view?usp=sharing",
+    "https://drive.google.com/file/d/1-e6-avqYbZt1mP9UA04XoGtV6V2o0ESc/view?usp=share_link",
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -39,15 +39,14 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY SYSTEM ADMINISTRATION & IT RELATED SERVICES WITH A SPRINKLE OF SOME LIGHT PROGRAMMING ON THE SIDE",
+  subTitle:
+    "CRAZY SYSTEM ADMINISTRATION & IT RELATED SERVICES WITH A SPRINKLE OF SOME LIGHT PROGRAMMING ON THE SIDE",
   skills: [
     emoji(
       "⚡ Managing devices and accounts using directory services effectively"
     ),
     emoji("⚡ Setting up and deploying servers"),
-    emoji(
-      "⚡ Troubleshooting and fixing all IT related problems"
-    )
+    emoji("⚡ Troubleshooting and fixing all IT related problems")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -69,6 +68,10 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "Programming",
       fontAwesomeClassname: "fas fa-code"
+    },
+    {
+      skillName: "Troubleshooting",
+      fontAwesomeClassname: "fas fa-wrench"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -84,7 +87,7 @@ const educationInfo = {
       logo: require("./assets/images/osmania-logo.jpg"),
       subHeader: "Bachelor's of Computer Application (BCA)",
       duration: "2013 - 2017",
-      desc: "Majored in programming and information technology.",
+      desc: "Majored in programming and information technology."
       // descBullets: [
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
@@ -103,12 +106,16 @@ const techStack = {
       progressPercentage: "90%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Server & Computer management",
+      Stack: "Server & Workstation management",
+      progressPercentage: "70%"
+    },
+    {
+      Stack: "Hardware & Software Installation",
       progressPercentage: "70%"
     },
     {
       Stack: "Programming",
-      progressPercentage: "50%"
+      progressPercentage: "60%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -136,9 +143,34 @@ const workExperiences = {
       colleagues, and maintaining computer devices, \
       servers and printers and schedule backups of \
       the server and computer devices periodically.",
+      descBullets: [
+        "Troubleshooting & resolving technical issues, software installations, and improving IT systems.",
+        "Maintaining File server & Workstations.",
+        "Configuring & maintaining active directory.",
+        "Providing technical assistance for business.",
+        "Configuring & maintaining local internal network."
+      ]
+    },
+    {
+      role: "Customer site tracking & Invoice Clerk",
+      company: "Fenda Investment Company",
+      companylogo: require("./assets/images/fenda-logo.png"),
+      date: "2019 – Present",
+      // desc: "",
+      descBullets: [
+        "Creating and updating company database with awarded telecom sites for all customers and vendors such as TAWAL, Ericsson, Nokia, Huawei & STC and keeping track of site milestones till it's invoiced.",
+        "Creating invoices for clients, ensuring all invoices are accurate, and resolving billing errors."
+      ]
+    },
+    {
+      role: "FDED Preparation & Printing",
+      company: "Fenda Holding Company",
+      companylogo: require("./assets/images/fenda-logo.png"),
+      date: "2017 – 2018"
+      // desc: "",
       // descBullets: [
-      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      //   "Creating and updating company database with awarded telecom sites for all customers and vendors such as TAWAL, Ericsson, Nokia, Huawei & STC and keeping track of site milestones till it's invoiced.",
+      //   "Creating invoices for clients, ensuring all invoices are accurate, and resolving billing errors."
       // ]
     }
   ]
@@ -148,8 +180,8 @@ const workExperiences = {
 To know how to get github key look at readme.md */
 
 const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: false // Set false to hide this section, defaults to true
+  showGithubProfile: "false", // Set true or false to show Contact profile using Github, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
@@ -203,7 +235,7 @@ const achievementSection = {
         {
           name: "Certification",
           url: "https://drive.google.com/file/d/1_bTwWlmBehDHbFBC2qzoPsHJPC-d2IB4/view?usp=sharing"
-        },
+        }
         // {
         //   name: "Award Letter",
         //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
@@ -223,7 +255,7 @@ const achievementSection = {
         {
           name: "Certification",
           url: "https://drive.google.com/file/d/1eseNHdhbfdmB5ekALTp0gMWTFJruXBbd/view?usp=sharing"
-        },
+        }
         // {
         //   name: "Award Letter",
         //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
@@ -244,7 +276,7 @@ const achievementSection = {
         {
           name: "Certification",
           url: "https://drive.google.com/file/d/1dafxF9p7FRjr-CTsEm4sUwCINQpbxY8P/view?usp=sharing"
-        },
+        }
         // {
         //   name: "Award Letter",
         //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
@@ -265,7 +297,7 @@ const achievementSection = {
         {
           name: "Certification",
           url: "https://drive.google.com/file/d/1M2oiyFRbpQgo64ZvniiLI9BfE0mOku3B/view?usp=sharing"
-        },
+        }
         // {
         //   name: "Award Letter",
         //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
@@ -286,7 +318,7 @@ const achievementSection = {
         {
           name: "Certification",
           url: "https://drive.google.com/file/d/1ndP6LTGcpZhTQWEovHkYj_h5TvuD3nW2/view?usp=sharing"
-        },
+        }
         // {
         //   name: "Award Letter",
         //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
@@ -307,7 +339,7 @@ const achievementSection = {
         {
           name: "Certification",
           url: "https://drive.google.com/file/d/1uH6XiBYqDBJv9YZ_jrQWgkNMJfDz_idz/view?usp=sharing"
-        },
+        }
         // {
         //   name: "Award Letter",
         //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
@@ -328,7 +360,7 @@ const achievementSection = {
         {
           name: "Certification",
           url: "https://drive.google.com/file/d/1CViATIuhAAcUvQ02yyPI333DtfJstUb7/view?usp=sharing"
-        },
+        }
         // {
         //   name: "Award Letter",
         //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
@@ -349,7 +381,7 @@ const achievementSection = {
         {
           name: "Certification",
           url: "https://drive.google.com/file/d/1Kg7DFaSRRQHHnLeCg3NidJTGsR7-Uhuf/view?usp=sharing"
-        },
+        }
         // {
         //   name: "Award Letter",
         //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
@@ -359,7 +391,7 @@ const achievementSection = {
         //   url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
         // }
       ]
-    },
+    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
