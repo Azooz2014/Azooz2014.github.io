@@ -26,12 +26,13 @@ input {
 
 .slider::before {
   position: absolute;
-  content: "";
-  height: 26px;
-  width: 28px;
-  left: 0;
-  bottom: 0;
-  background-color: $textColorDark;
+  content: "\1f31e";
+  // height: 26px;
+  // width: 28px;
+  font-size: 25px;
+  left: -2px;
+  bottom: 2px;
+  //background-color: $textColorDark;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -45,6 +46,7 @@ input:focus + .slider {
 }
 
 input:checked + .slider::before {
+  content: "\1F31A";
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
@@ -81,6 +83,12 @@ input:checked + .slider::after {
   .slider::after {
     right: 15.3%;
     bottom: 22.5%;
+  }
+}
+
+@media all and (max-width: 1380px){
+  .slider::before{
+    bottom: -2px;
   }
 }
 
