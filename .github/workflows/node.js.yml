@@ -20,6 +20,10 @@ jobs:
         with:
           persist-credentials: false
 
+      - name: update npm
+        run: |
+          npm install -g npm@10.2.3
+
       - name: Install and Build 🔧 # Build the Project
         run: |
           npm install
