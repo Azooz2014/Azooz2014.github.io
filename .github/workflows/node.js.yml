@@ -46,7 +46,7 @@ jobs:
           git config --global credential.helper cache
           git remote add githubPages https://${{secrets.MY_GITHUB_PAGES_ACCESS_TOKEN}}@github.com/Azooz2014/Azooz2014.github.io.git
           git checkout -b gh-pages
-          git push githubPages gh-pages:master
+          git push --force githubPages gh-pages:master
 
       - name: Archive npm failure logs
         uses: actions/upload-artifact@v2
