@@ -39,9 +39,10 @@ jobs:
           git config --global credential.helper cache
           git remote add githubPages https://${{secrets.MY_GITHUB_PAGES_ACCESS_TOKEN}}@github.com/Azooz2014/Azooz2014.github.io.git
           git checkout -b gh-pages
+          git pull githubPages
           git add .
           git commit -m "$(date)"
-          git push --force githubPages gh-pages:master
+          git push githubPages gh-pages:master
         #uses: JamesIves/github-pages-deploy-action@releases/v3
         #with:
           #GITHUB_TOKEN: ${{ secrets.MY_GITHUB_PAGES_ACCESS_TOKEN }} # This is provided by GitHub.
