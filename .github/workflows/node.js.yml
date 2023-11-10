@@ -41,7 +41,7 @@ jobs:
           git checkout -b gh-pages
           git add .
           git commit -m "$(date)"
-          git push githubPages gh-pages:master
+          git push --force githubPages gh-pages:master
         #uses: JamesIves/github-pages-deploy-action@releases/v3
         #with:
           #GITHUB_TOKEN: ${{ secrets.MY_GITHUB_PAGES_ACCESS_TOKEN }} # This is provided by GitHub.
