@@ -37,11 +37,11 @@ jobs:
           git config --global user.email "fazouz2010@gmail.com"
           git config --global user.name "Abdelaziz"
           git config --global credential.helper cache
-          git remote add origin https://${{secrets.ACCESS_TOKEN}}@github.com/Azooz2014/Azooz2014.github.io.git
+          git remote add githubPages https://${{secrets.ACCESS_TOKEN}}@github.com/Azooz2014/Azooz2014.github.io.git
           git checkout gh-pages
           git add .
           git commit -m "$(date)"
-          git push origin master
+          git push githubPages master
         #uses: JamesIves/github-pages-deploy-action@releases/v3
         #with:
           #GITHUB_TOKEN: ${{ secrets.MY_GITHUB_PAGES_ACCESS_TOKEN }} # This is provided by GitHub.
