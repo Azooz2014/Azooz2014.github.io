@@ -21,7 +21,7 @@ jobs:
         with:
           persist-credentials: false
         env: 
-          ACCESS_TOKEN: '${{ secrets.MY_GITHUB_PAGES_ACCESS_TOKEN }}'
+          ACCESS_TOKEN: '${{secrets.MY_GITHUB_PAGES_ACCESS_TOKEN}}'
 
       - name: update npm
         run: |
@@ -37,7 +37,7 @@ jobs:
           git config --global user.email "fazouz2010@gmail.com"
           git config --global user.name "Github Actions"
           git config --global credential.helper cache
-          git remote add githubPages https://Azooz2014:${{secrets.ACCESS_TOKEN}}@github.com/Azooz2014/Azooz2014.github.io.git
+          git remote add githubPages https://${secrets.ACCESS_TOKEN}@github.com/Azooz2014/Azooz2014.github.io.git
           git checkout -b gh-pages
           git add .
           git commit -m "$(date)"
