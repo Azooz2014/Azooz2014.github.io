@@ -38,7 +38,7 @@ jobs:
           git config --global user.name "Abdelaziz"
           git config --global credential.helper cache
           git remote add githubPages https://${{secrets.ACCESS_TOKEN}}@github.com/Azooz2014/Azooz2014.github.io.git
-          git checkout gh-pages
+          git checkout -b gh-pages
           git add .
           git commit -m "$(date)"
           git push githubPages master
