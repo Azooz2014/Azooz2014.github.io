@@ -24,10 +24,14 @@ jobs:
         run: |
           npm install npm@latest -g
 
+      - name: update dependincies
+        run: |
+          npm update
+
       - name: Install and Build 🔧 # Build the Project
         run: |
-          npm install
-          npm run build
+          npm install --force
+          npm run build -- force
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
