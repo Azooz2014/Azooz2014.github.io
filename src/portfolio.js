@@ -43,16 +43,20 @@ const skillsSection = {
     "CRAZY SYSTEM ADMINISTRATION & IT RELATED SERVICES WITH A SPRINKLE OF SOME LIGHT PROGRAMMING ON THE SIDE",
   skills: [
     emoji(
-      "⚡ Managing devices and accounts using directory services effectively"
+      "⚡ Managing End-Points and users using Active Directory effectively"
     ),
-    emoji("⚡ Setting up and deploying servers"),
-    emoji("⚡ Troubleshooting and fixing all IT related problems")
+    emoji("⚡ Setting up And Deploying Servers & End-Points"),
+    emoji("⚡ Troubleshooting and solving all IT related problems")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
+    {
+      skillName: "End-Points",
+      fontAwesomeClassname: "fas fa-laptop"
+    },
     {
       skillName: "Servers",
       fontAwesomeClassname: "fas fa-server"
@@ -106,8 +110,8 @@ const techStack = {
       progressPercentage: "90%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Server & Workstation management",
-      progressPercentage: "70%"
+      Stack: "Servers & End-Point management",
+      progressPercentage: "80%"
     },
     {
       Stack: "Hardware & Software Installation",
@@ -126,6 +130,48 @@ const techStack = {
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
+    {
+      role: "IT Specialist",
+      company: "Emaar Executive",
+      companylogo: require("./assets/images/eec-logo-resized.png"),
+      date: "Sep 2023 - Present",
+      descBullets: [
+        "Microsoft 365 Tenant Administration",
+        "End-Point Deployment and Management",
+        "End-Point Security",
+        "IT Services Automation",
+        "Network Firewall Appliance Configuration",
+        "User Creation & Management",
+        "Email Creation & Management",
+        "Supporting users with various software & hardware problems",
+        "Provisioning & Deploying devices",
+        "Device Administration",
+        "Troubleshooting & fixing various IT Problems company wide",
+        "Cameras Administration",
+        "IP phone Administration",
+        "Servers Provisioning & Deployment",
+        "Network Administration",
+        "Cybersecurity Monitoring",
+        "Printer Provisioning & deployment"
+      ]
+    },
+    {
+      role: "Document Controller",
+      company: "TAWAL Telecom Tower Co.",
+      companylogo: require("./assets/images/tawal-logo.png"),
+      date: "Mar 2023 – Sep 2023",
+      descBullets: [
+        "Created and maintained document versions and review status across all running projects for all TAWAL sites.",
+        "Creating daily & weekly progress report using power bi & powerpoint. ",
+        "Collect and register all technical documents such as drawings and blueprints in the company’s system.",
+        "Keep other personnel updated on new document versions and how to obtain access.",
+        "Maintain confidentiality regarding sensitive documents.",
+        "Documents control for all design documentation including FDEDs, as built drawing.",
+        "Coordinator in TMS to assign in house reviewer for design team and design manager as per process.",
+        "Design follow up and reporting for all projects.",
+        "Responsible for archiving all the legacy projects documentation for Tawal acquired sites."
+      ]
+    },
     {
       role: "System Administrator & IT Support Specialist",
       company: "Fenda Investment Company",
@@ -226,6 +272,26 @@ const achievementSection = {
     "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
 
   achievementsCards: [
+    {
+      title: "Fortinet Certified Associate Cybersecurity",
+      subtitle:
+        "Certificate of completion of Fortinet Certified Associate Cybersecurity Course.",
+      image: require("./assets/images/FCA-badge.png"),
+      footerLink: [
+        {
+          name: "Certification",
+          url: "https://drive.google.com/file/d/1Jz9A4qDJmn7KQyrOvliD284cVGusTj44/view?usp=drive_link"
+        }
+        // {
+        //   name: "Award Letter",
+        //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
+        // },
+        // {
+        //   name: "Google Code-in Blog",
+        //   url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+        // }
+      ]
+    },
     {
       title: "Google IT Support Professional",
       subtitle:
